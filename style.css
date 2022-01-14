@@ -1,0 +1,426 @@
+
+:root{
+    --main-color:rgb(27, 26, 26);
+    --text-color:rgb(231, 33, 33);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body{
+    background-color:var(--main-color) ;
+    font-family: 'Poppins', sans-serif;
+}
+.logo-div{
+    display: flex;
+    justify-content: center;
+}
+.logo-div img{
+    width: 90px;
+    height: 90px;
+}
+.header-div{
+    display: grid;
+    grid-template-columns: 300px repeat(1, 1fr);
+    position: sticky;
+    top: 20;
+}
+.nav-section{
+    display: grid;
+    grid-template-columns: repeat(1,1fr) 180px;
+}
+.nav-area{
+    display: flex;
+    justify-content: center;
+}
+.nav-area ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 5px;
+}
+.nav-area ul li{
+    padding: 10px 20px;
+    margin: 10px;
+    background-color:rgb(151, 190, 24);
+    box-shadow: 0px 0px 2px rgb(112, 110, 110);
+    border-radius: 5px;
+    transition: 1s;
+}
+.nav-area ul li:hover{
+    background-color: rgb(51, 68, 85);
+    text-decoration: none;
+}
+.nav-item{
+    position: relative;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+.nav-area ul li:hover .nav-item{
+    transition: 1s;
+}
+.account-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.account-area i{
+    font-size: 40px;
+    padding-left: 15px;
+    color:white;
+
+}
+.account-area i:hover{
+    color: rgb(216, 205, 205);
+}
+/* nav setion end */
+main{
+    background-color: slategray;
+}
+.welcon-sec{
+    background-image: url("images/bg/bg-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Spline Sans', sans-serif;
+    font-size: 1.5em;
+    position: relative;
+    height: 550px;
+    padding: 50px 0;
+}
+.welcon-sec h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+    color: rgb(151, 190, 24);
+    margin-bottom: 10px;
+}
+.welcom-massege{
+    width: 500px;
+    position: absolute;
+    color: rgb(151, 190, 24);
+    right: 10px;
+    text-align: justify;
+}
+.common-btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    color: rgb(8, 10, 7);
+    background-color: rgb(151, 190, 24);
+   
+}
+.explore-btn{
+    position: absolute;
+    bottom: 50px;
+    right: 360px;
+  
+    
+}
+.common-btn:hover{background-color:rgb(19, 156, 219) ;
+    color: white;
+    transition: 1s;
+}
+/* welcome section end */
+/* intro-section  starts */
+.intro-sec{
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(100, 99, 99);
+}
+.intro-sec h1{
+    font-size: 3em;
+    padding: 15px;
+    text-align: center;
+    color:rgb(184, 235, 16) ;
+}
+.intro-items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    padding: 50px 0;
+}
+.intro-item{
+    width: 450px;
+    height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.intro-img{
+    width: 450px;
+    height: 250px;
+}
+.intro-img:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+
+
+}
+.explore-more-btn{
+    display: block;
+    margin: auto;
+}
+/* food section */
+.food-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.food-item{
+    width: 250px;
+   box-shadow: 0 0 2px rgb(78, 74, 74);
+   margin: 10px auto;
+}
+.img-sec img{
+    width: 100%;
+    height: 150px;
+}
+.food-desc{
+    padding: 10px;
+}
+.food-desc>h3,p{
+    color: rgb(36, 1, 1);
+}
+.food-rivew{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.reating{
+    color: rgb(255, 136, 0);  
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.sale-up{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 136, 0);  
+    padding: 5px;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 5px;
+}
+.food-desc button{
+    padding: 7px 15px;
+    font-size: 17px;
+    background-color:rgb(151, 190, 24) ;
+    border: none;
+    color: white;
+}
+/* contact form */
+.contact-section{
+    margin: 20px 0;
+}
+.contact-section h1{
+    text-align: center;
+    font-size: 3em;
+    padding: 10px;
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+}
+.contact-input-field input{
+    margin-top: 5px;
+    width: 250px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.contact-from textarea{
+    width: 504px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+}
+/* about */
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.about-sec>h1{
+    text-align: center;
+    font-size: 3em;
+    padding: 10px;
+}
+.about{
+    text-align: justify;
+    width: 300px;
+    margin: 15px 15px;
+}
+.about h1{
+    text-align: center;
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    background-color:black ;
+
+}
+footer p{
+    color: white;
+    padding: 10px;
+}
+
+/* layout for small devices */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {    
+    .header-div{
+    display: block;
+    padding-bottom: 10px;
+}
+.nav-section{
+    display: block;
+}
+.nav-area ul{
+    width: 100%;
+    flex-direction: column;
+}
+.nav-area ul li{
+    width: 100%;
+    text-align: center;
+}
+.welcon-sec{
+    height: 900px;
+    background-size: cover;
+}
+.welcon-sec h1{
+ color: white;
+ 
+}
+.welcom-massege{
+    width: 90%;
+    color: white;
+}
+.explore-btn{
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.intro-sec{
+    width: 90%;
+
+}
+.intro-items{
+    display: block;
+}
+.intro-item{
+    margin:  10px 0;
+}
+.food-items{
+    grid-template-columns: repeat(1,1fr);
+}
+.contact-container{
+    flex-direction: column;
+    padding: 10px
+}
+.contact-input-field input{
+    width: 100%;
+}
+.contact-from textarea{
+    width: 100%;
+}
+.about-container{
+    grid-template-columns: repeat(1,1fr);
+}
+.about{
+    margin: 0 auto;
+    padding: 10px 0;
+}}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+        .header-div{
+             display: block;
+             padding-bottom: 10px;
+         }
+       .about-container{
+             grid-template-columns: repeat(1,1fr);
+        }
+        .nav-section{
+            display: block;
+        }
+        .welcon-sec{
+            height: 700px;
+            background-size: cover;
+        }
+        .welcon-sec h1{
+            color: white;
+            
+           }
+           .welcom-massege{
+               width: 100%;
+               padding: 20px;
+               color: white;
+           }
+           .explore-btn{
+               right: 0;
+               left: 0;
+               margin: auto;
+           }
+           .intro-sec{
+            width: 90%;
+            
+            }
+
+            .intro-items{
+                grid-template-columns: repeat(1,1fr);
+            }
+            .food-items{
+                grid-template-columns: repeat(2,1fr);
+             }
+            .about-container{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+            .about{
+                 margin: 0 auto;
+                 padding: 10px ;
+                }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .header-div{
+        display: grid;
+        grid-template-columns: 300px repeat(1, 1fr);
+    }
+    .nav-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr) 180px;
+        }
+        .welcon-sec h1{
+            color: rgb(151, 190, 24);;
+        }
+        .welcom-massege{
+            width: 500px;
+            position: absolute;
+            color: rgb(151, 190, 24);
+            right: 10px;
+            text-align: justify;
+        }
+        .intro-sec{
+            width: 80%;
+        }
+        .intro-items{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-row-gap: 30px;
+            padding: 50px 0;
+        }
+        .food-items{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        
+        .about-container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+}
+
